@@ -46,11 +46,46 @@ export default function Home() {
           </div>
         </div>
 
-        <section id="features">
+        <section>
           <div className="container">
             <div className="section-header">
               <h2>Designed for agents from the ground up.</h2>
               <p>Email APIs were built to blast. OpenMail is built for the reply.</p>
+            </div>
+            <div className="feature-blocks">
+              <div className="feature-block">
+                <div>
+                  <h3>Instant replies</h3>
+                  <p>Replies reach your agent over a webhook or WebSocket. Nothing polls. Your agent wakes the moment mail arrives and responds in-thread.</p>
+                  <a href="https://docs.openmail.sh" className="btn btn-secondary">Read the Docs</a>
+                </div>
+                <div className="visual">webhook · websocket</div>
+              </div>
+              <div className="feature-block">
+                <div>
+                  <h3>One inbox per agent</h3>
+                  <p>Dedicated address and scoped keys. Isolation so one agent cannot reach another. Clean separation for multi-agent systems.</p>
+                  <a href="https://console.openmail.sh/signup" className="btn btn-secondary">Start for free</a>
+                </div>
+                <div className="visual">isolation · scoped keys</div>
+              </div>
+              <div className="feature-block">
+                <div>
+                  <h3>LLM-ready attachments</h3>
+                  <p>PDF, CSV, images, DOCX, and JSON parsed to text. Ready for your model. No preprocessing required.</p>
+                  <a href="https://docs.openmail.sh" className="btn btn-secondary">See supported formats</a>
+                </div>
+                <div className="visual">pdf · csv · docx · json</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="features">
+          <div className="container">
+            <div className="section-header">
+              <h2>Everything an agent needs.</h2>
+              <p>Sender rules, isolation, and real-time delivery. Built for the reply, not the blast.</p>
             </div>
             <div className="features-grid">
               <div className="feature-card">
@@ -87,7 +122,7 @@ openclaw channels add --channel openmail --api-key om_xxx --mailbox-name support
 openclaw gateway restart
 
 # Mail from people wakes the agent; it replies in-thread.`}</code></pre>
-            <div style={{ textAlign: 'center', marginTop: 28 }}>
+            <div style={{ textAlign: 'center', marginTop: 32 }}>
               <a href="https://docs.openmail.sh" className="btn btn-secondary">Read the Docs</a>
             </div>
           </div>
@@ -142,10 +177,10 @@ openclaw gateway restart
 
         <section className="dither dither-cta">
           <div className="container" style={{ textAlign: 'center' }}>
-            <h2 style={{ fontSize: 30, fontWeight: 600, letterSpacing: '-0.02em', marginBottom: 14 }}>
+            <h2 style={{ fontSize: 32, fontWeight: 600, letterSpacing: '-0.02em', marginBottom: 16 }}>
               Every AI agent deserves its own inbox.
             </h2>
-            <p style={{ color: 'var(--text-muted)', marginBottom: 26 }}>No commitment, cancel anytime.</p>
+            <p style={{ color: 'var(--text-muted)', marginBottom: 28 }}>No commitment, cancel anytime.</p>
             <a href="https://console.openmail.sh/signup" className="btn btn-primary">Start for free</a>
           </div>
         </section>
